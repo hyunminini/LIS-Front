@@ -1,0 +1,30 @@
+.default1 {
+    padding: 0.9em 0 1.5em 0;
+    width: 100%;
+    height: 100%;
+    .default-wrap1 {
+        display: flex;
+        height: 90%;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+
+        .default-icon1 {
+            color: #e6e6e6;
+
+            svg {
+                font-size: 3.1em;
+            }
+        }
+
+        h3 {
+            color: #ccc;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            color: #ccc;
+        }
+    }
+}

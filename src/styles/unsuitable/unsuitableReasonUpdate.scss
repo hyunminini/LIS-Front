@@ -1,0 +1,80 @@
+$Blue: #3c9df6;
+$Blue2: #1f6fbb;
+$TalbeLine: #c6c9cc;
+
+.reason {
+    width: 100%;
+    .con-title {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.5em;
+        font-size: 13px;
+        justify-content: space-between;
+
+        .header {
+            display: flex;
+        }
+
+        .close-btn {
+            float: right;
+            background: white;
+        }
+    }
+    .text {
+        width: 100%;
+        display: flex;
+        p {
+            margin-left: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .reason-name {
+            margin-top: 23px;
+            font-size: 12px;
+            margin-left: 10px;
+            color: rgb(102, 100, 100);
+            font-weight: lighter;
+        }
+    }
+
+    .reason-content {
+        width: 100%;
+        height: 380px;
+        margin-top: 20px;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border: none;
+            resize: none;
+            background: #f0f0f0;
+            margin-bottom: 1rem;
+            border: 1px solid lightgrey;
+        }
+    }
+
+    .reason-footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.6em;
+
+        .btn2 {
+            float: right;
+            background: $Blue;
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 22px 5px 22px;
+            margin: 1em 10px 0 3px;
+            border-radius: 5px;
+            &:hover {
+                background: $Blue2;
+                color: #fff;
+                transition: 0.5s;
+            }
+        }
+    }
+}

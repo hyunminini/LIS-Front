@@ -1,0 +1,118 @@
+$Blue: #3C9DF6;
+
+.modal_con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  .modal_size {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    padding: 17px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgb(34 36 38 / 15%);
+    border: 1px solid black;
+
+    .modal_close_btn {
+      position: absolute;
+      top: 17px;
+      right: 17px;
+      border: none;
+      color: black;
+      background-color: transparent;
+      font-size: 30px;
+    }
+
+    .modalCloseBtn:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+.modal_wrap{
+  height: 100%;
+  .modal_title{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+
+  .modal_table{
+    max-height: 400px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    transition: all 800ms ease-in;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      margin: 20px 0px;
+      padding: 0px 15px;
+    }
+
+    th {
+      border: 1px solid #c6c9cc;
+      padding : 6px 15px;
+      background: #f0f0f0;
+    }
+
+    td {
+      border: 1px solid #c6c9cc;
+      padding : 6px 15px;
+    }
+  }
+}
+
+.unsuitable_modal_wrap{
+  height: 100%;
+
+  .unsuitable_modal_title{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+
+    .unsuitable_modal_story{
+      display: flex;
+      height: 85%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+.item_btn {
+  border: 1px solid #c6c9cc;
+  background: #f0f0f0;
+  font-weight: bold;
+  padding: 5px 13px 5px 13px;
+  border-radius: 5px;
+  width: 100%;
+
+  &:hover {
+    background: #C9D6DF;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+}

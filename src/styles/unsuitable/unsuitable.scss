@@ -1,0 +1,561 @@
+$Blue: #3C9DF6;
+$Blue2: #1f6fbb;
+
+$TalbeLine: #c6c9cc;
+
+.swal2-container {
+  z-index: 99999;
+}
+
+@mixin CON_TITLE {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 0.2em;
+}
+
+@mixin CON_BOX {
+  margin-top: 1em;
+  border: 1px solid #b9b9b9;
+  padding: 0.63em;
+  border-radius: 15px;
+  box-shadow: 0px 1.5px 2px rgba(0, 0, 0, 0.25);
+}
+
+@mixin CON_TITLE_WRAP {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
+}
+
+.wrap {
+  width: 81.25em;
+  height: auto;
+  margin: 0 auto;
+
+  .max-wrap {
+    width: 81.25em;
+    max-width: 96.5%;
+    margin: 0 auto;
+
+    .title-wrap {
+      display: flex;
+      align-items: center;
+      margin-top: 1em;
+      padding-bottom: 0.8em;
+      border-bottom: 1px solid #ccc;
+
+      h2 {
+        font-size: 20px;
+        margin-left: 0.5em;
+
+        span {
+          font-size: 16px;
+          color: $Blue;
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+.search-bar {
+  margin-top: 1em;
+  border: 1px solid #b9b9b9;
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+  box-shadow: 0px 1.5px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+
+  p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 0.2em;
+    font-size: 18px;
+  }
+
+  span {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  input {
+    margin-left: 1em;
+    padding: 3px 10px 3px 10px;
+    &:nth-child(4) {
+      font-size: 12px;
+      word-spacing: -5px;
+    }
+    &:nth-child(6) {
+      margin-left: 5px;
+    }
+    &:nth-child(8) {
+      margin-left: 5px;
+    }
+    &::placeholder {
+      color: #b9b9b9;
+    }
+
+
+  }
+
+  .search-btn {
+    border: 1px solid $Blue;
+    background: #fff;
+    color: $Blue;
+    font-weight: bold;
+    padding: 3px 13px 3px 13px;
+    margin-left: 1em;
+
+    &:hover {
+      background: $Blue;
+      color: #fff;
+      transition: 0.5s;
+      font-weight: bold;
+    }
+  }
+
+}
+
+// ----------------------------------------------------------------------------
+
+.content1{
+  display: flex;
+  min-height: 16.50em;
+  height:15.50em;
+  width: 100%;
+
+  .sample-wrap {
+    @include CON_BOX();
+    display: inline-block;
+    min-width: 747px;
+    width:48%;
+    margin-right: 20px;
+    
+    .cu{
+      color: #ff6352;
+      font-weight: bold;
+    }
+    .su{
+      color: #ff6352;
+      font-weight: bold;
+    }
+    .con-title {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5em;
+
+      p {
+        @include CON_TITLE();
+      }
+    }
+    .sample-table{
+      height:180px;
+      max-height: 180px;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      transition: all 800ms ease-in;
+      &::-webkit-scrollbar {
+          display: none;
+      }
+      .default_position{
+        display: flex;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+      }
+      table {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        border-collapse: separate;
+        border-spacing: 0;
+        width:100%;
+      }
+      .message{
+        color: gray;
+        justify-content: center;
+        margin-top:20px;
+        text-align: center;
+      }
+      th,
+      td {
+        padding:5px 7px;
+        text-align: center;
+        
+      }
+      th {
+        background: #f0f0f0;
+        border-right: 1px solid $TalbeLine;
+        border-bottom: 1px solid $TalbeLine;
+        border-top: 1px solid $TalbeLine;
+        text-align: center;
+        font-size: 14px;
+        
+  
+        &:first-child {
+          border-left: 1px solid $TalbeLine;
+        }
+      }
+      td {
+        border-right: 1px solid $TalbeLine;
+        border-bottom: 1px solid $TalbeLine;
+        font-size:13px;
+  
+        
+        &:first-child {
+          border-left: 1px solid $TalbeLine;
+        }
+
+        &:nth-child(7){ 
+          font-weight: bold;
+          &:hover{
+            cursor: pointer;
+            background-color: lightgray;
+            transition: 0.5s;
+          }
+          &:active{
+            background-color: #f0f0f0;
+          }
+        }
+        &:nth-child(8){ 
+          font-weight: bold;
+          &:hover{
+            cursor: pointer;
+            background-color: lightgray;
+            transition: 0.5s;
+
+          }
+          &:active{
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+    
+  }
+
+  .perscribe-wrap {
+    @include CON_BOX();
+    display: inline-block;
+    min-width: 750px;
+    width:52%;
+    .con-title {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5em;
+
+      p {
+        @include CON_TITLE();
+      }
+    }
+    .prescribe-table{
+      height:180px;
+      max-height: 180px;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      transition: all 800ms ease-in;
+      &::-webkit-scrollbar {
+          display: none;
+      }
+      .default_position{
+        display: flex;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+      }
+      table {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        border-collapse: separate;
+        border-spacing: 0;
+        width:100%;
+        position: relative;
+      }
+      .message{
+        color: gray;
+        justify-content: center;
+        margin-top:20px;
+        text-align: center;
+      }
+      th,
+      td {
+        padding:5px 7px;
+        text-align: center;
+        font-size: 14px;
+        max-width: 80px;
+        white-space: nowrap;
+        overflow:   hidden;
+        text-overflow: ellipsis;
+  
+        :first-child {
+          border-left: 1px solid $TalbeLine;
+          display: none;
+        }
+      }
+      th {
+        background: #f0f0f0;
+        border-right: 1px solid $TalbeLine;
+        border-bottom: 1px solid $TalbeLine;
+        border-top: 1px solid $TalbeLine;
+        text-align: center;
+  
+  
+  
+        &:first-child {
+          border-left: 1px solid $TalbeLine;
+        }
+      }
+      td {
+        border-right: 1px solid $TalbeLine;
+        border-bottom: 1px solid $TalbeLine;
+        font-size: 13px;
+  
+        &:first-child {
+          border-left: 1px solid $TalbeLine;
+        }
+        &:nth-child(2){
+          font-weight: bold;
+          &:hover{
+            cursor: pointer;
+            background-color: lightgray;
+            transition: 0.5s;
+          }
+          &:active{
+            background-color: #f0f0f0;
+          }
+        }
+        &:nth-child(3) {
+          &:hover .hidden-text1 {
+            display: block;
+          }
+        }
+        &:nth-child(6) {
+          &:hover .hidden-text2 {
+            display: block;
+          }
+        }
+      }
+      .hidden-text1{
+        position: absolute;
+        font-size: 13px;
+        padding: 5px 20px;
+        background-color: #444444;
+        border-radius: 5px;
+        color: #ffffff;
+        display: none;
+        text-align: center;
+        z-index: 99;
+      }
+      .hidden-text2{
+        position: absolute;
+        font-size: 13px;
+        padding: 5px 20px;
+        background-color: #444444;
+        border-radius: 5px;
+        color: #ffffff;
+        display: none;
+        text-align: center;
+        z-index: 99;
+      }
+    }
+
+  }
+}
+// ---------------------------------------------------------------
+
+.content2{
+  display:flex;
+  min-height: 470px;
+  .unsuitable-wrap.left {
+    @include CON_BOX();
+    display: inline-block;
+    min-width: 747px;
+    width: 48%;
+    margin-right: 20px;
+    .default_position{
+      display: flex;
+      height: 90%;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-wrap{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+
+      .con-title {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0.5em;
+
+      }
+      p {
+        @include CON_TITLE();
+      }
+
+      span {
+        margin-right: 0.5em;
+      }
+
+    }
+    .select-reason {
+      margin-top: 14px;
+      display:flex;
+      p {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        margin-left: 0.2em;
+        font-size: 15px;
+      }
+      input {
+        margin: 0 1em 0 1em;
+        padding: 3px 10px 3px 10px;
+        font-size: 12px;  
+        width: 10em;
+      }
+      .reason{
+        margin: 0 1em 0 1em;
+        padding: 3px 5px 3px 5px;
+        width:32em;
+      }
+    }
+
+    .write-reason {
+      textarea {
+        width: 100%;
+        height: 20.5em;
+        margin-top: 1rem;
+        padding: 1rem 0 0 1rem;
+        border: none;
+        resize: none;
+        background: #f0f0f0;
+        margin-bottom: 1rem;
+        border: 1px solid lightgrey;
+      }
+
+      border-bottom: 1px solid #ccc;
+      .btn {
+        float: right;
+        background: $Blue;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px 30px 5px 30px;
+        margin-top: 10px;
+        border-radius: 10px;
+        &:hover {
+          background: $Blue2;
+          color: #fff;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  // -----------------------------------------------------------------------------
+  .unsuitable-wrap.right {
+
+    @include CON_BOX();
+    min-width: 750px;
+    width:52%;
+    display: inline-block;
+
+    .default_position{
+      display: flex;
+      height: 90%;
+      align-items: center;
+      justify-content: center;
+    }
+    .con-title {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5em;
+
+      p {
+        @include CON_TITLE();
+      }
+    }
+    .selected-reason {
+      padding-top: 10px;
+      height: 22em;
+      border-bottom: 1px solid #ccc;
+      li{
+        list-style: none;
+        border: none;
+        display: inline-block;
+
+        .reason-item {
+          border-radius: 5px;
+          align-items: center;
+          background: #f0f0f0;
+          border: 1px solid lightgrey;
+          margin-right: 0.5em;
+          margin-bottom: 0.5em;
+          text-align: center;
+          padding: 10px 15px;
+          height: auto;
+          font-size: 19px;
+          font-weight: bold;
+          &:hover {
+            // color:  white;
+            background: #ddd8d8;
+            transition: 0.3s;
+          }
+
+          .item{
+            text-align: center;
+            align-items: center;
+          }
+
+          cursor: pointer;
+          // :hover {
+          //   color:  blue;
+          //   background: red;
+          //   transition: 0.3s;
+          // }
+
+        }
+      }
+      span {
+        padding: 3px;
+        display: inline-block;
+        background: #f0f0f0;
+        border: 1px solid lightgrey;
+        margin: 5px 5px;
+        font-size: 16px;
+
+      }
+      button {
+        border: none;
+      }
+    }
+
+    .btn {
+      float: right;
+      background: $Blue;
+      border: none;
+      color: white;
+      font-size: 18px;
+      padding: 5px 30px 5px 30px;
+      margin-top: 10px;
+      border-radius: 10px;
+      &:hover {
+        background: $Blue2;
+        color: #fff;
+        transition: 0.5s;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+

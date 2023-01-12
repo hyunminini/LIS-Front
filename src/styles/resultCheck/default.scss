@@ -1,0 +1,25 @@
+.default {
+    padding: 4.5em 0 4.5em 0;
+
+    .default-wrap {
+        text-align: center;
+
+        .default-icon {
+            color: #e6e6e6;
+
+            svg {
+                font-size: 4em;
+            }
+        }
+
+        h3 {
+            color: #ccc;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            color: #ccc;
+        }
+    }
+}

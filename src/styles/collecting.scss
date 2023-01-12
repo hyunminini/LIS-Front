@@ -1,0 +1,458 @@
+$Blue: #3c9df6;
+
+@keyframes click-event {
+  from {
+    background-color: #E4E7EB;
+  }
+  to {
+    background-color: #ffffff;
+  }
+}
+
+.collecting-wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  .collecting-max-wrap {
+    width: 100%;
+    max-width: 96.5%;
+    margin: 0 auto;
+
+    .title-wrap {
+      display: flex;
+      align-items: center;
+      margin-top: 1em;
+      padding-bottom: 0.8em;
+      border-bottom: 1px solid #ccc;
+
+      h2 {
+        font-size: 20px;
+        margin-left: 0.5em;
+
+        span {
+          font-size: 16px;
+          color: $Blue;
+          margin-left: 0.5em;
+        }
+      }
+    }
+
+    .main-content {
+      margin-top: 1rem;
+      //display: flex;
+
+      .left-content {
+        width: 58%
+      }
+
+      .input-patientNumber {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .content-title {
+          border: none;
+        }
+
+        .input-form {
+          margin-top: 0.5rem;
+          margin-left: 2rem;
+          margin-right: 1rem;
+
+          #search-status {
+            margin-left: 1rem;
+          }
+
+          .patient-input-btn {
+            width: 5rem;
+            margin-left: 1rem;
+            height: 1.3rem;
+            background-color: #fff;
+            color: $Blue;
+            border: 0.5px $Blue solid;
+            border-radius: 10%;
+          }
+
+          .patient-input-btn:hover {
+            cursor: pointer;
+          }
+
+          .patient-input-btn:active {
+            background-color: $Blue;
+            color: #fff;
+          }
+
+          .patientNo-input {
+            width: 13rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .up {
+      display: block;
+      height: 30vh;
+
+      .input-name {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .right-content {
+        margin-left: 0;
+
+        .default {
+          padding:0.8rem;
+        }
+
+        .patient-info {
+          margin-left: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .patient-table {
+          width: 100%;
+          font-family: "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo-Light, sans-serif;
+          font-weight: bold;
+          color : #4e545f;
+
+          .patient-title {
+            display: flex;
+            background-color: #E4E7EB;
+            width : 20%;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+          }
+
+          .patient-data {
+            display: flex;
+            width : 20%;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+          }
+
+          .patient-data:hover {
+            cursor: pointer;
+          }
+
+          .memo {
+            width : 150%;
+          }
+          .regi-no {
+            width : 50%;
+          }
+        }
+        .patient-btn:active {
+          animation: click-event 5s;
+        }
+      }
+    }
+
+    .content-title {
+      display: flex;
+      padding: 0.5rem;
+
+      h3 {
+        padding-top: 2px;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .down {
+      margin-top: 1rem;
+      height: 50vh;
+      display: flex;
+    }
+
+    .left-table {
+      //margin-top: 1rem;
+      margin-right: 0.5rem;
+      border: 0.7px solid #B9B9B9;
+      border-radius: 0.5rem;
+      height: 100%;
+      box-shadow: -1px 1px 5px 0 #D4D3D3;
+      .visit-table {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        width: 90%;
+      }
+    }
+
+    .patient-comming {
+      width: 100%;
+      height: 80%;
+
+      .default {
+        padding:2.23rem;
+      }
+
+      ul {
+        height: 1.2rem;
+      }
+
+      .visit-btn:active {
+        animation: click-event 5s;
+      }
+
+      .comming-table {
+        width: 23.3%;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .comming-table:nth-child(2) {
+        width: 30%;
+      }
+    }
+
+    .right-content {
+      margin-left: 1rem;
+      border: 0.7px solid #B9B9B9;
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 80%;
+      box-shadow: -1px 1px 5px 0 #D4D3D3;
+      overflow: scroll;
+    }
+
+    .table-title {
+      background-color: #e4e7eb;
+      height: 17px;
+    }
+
+    .content-title {
+      margin-left: 0.3rem;
+      border-bottom: 1px black solid;
+    }
+
+    .fl {
+      float: left;
+      border-bottom: 1px solid #BCC0C8;
+    }
+
+    .buttons {
+      position: relative;
+      left: 33%;
+    }
+
+
+    .patient-order {
+      overflow: unset;
+      position: relative;
+
+      .collecting-button {
+        margin-right: 10px;
+        margin-top: 2px;
+        width: 5rem;
+        height: 1.5rem;
+        background-color: #fff;
+        color: $Blue;
+        border: 0.5px $Blue solid;
+        border-radius: 10%;
+      }
+
+      .collecting-button:active {
+        background-color: $Blue;
+        color: #fff;
+      }
+
+      .prescribe-table {
+        margin-top: 1rem;
+        display: inline-block;
+        margin-left: 1rem;
+      }
+
+      .prescribeInfo-table {
+        display: flex;
+
+        li {
+          width: 4rem;
+          text-align: center;
+        }
+
+        .blank {
+          width: 2rem;
+          height: 1.1rem;
+          align-items: center;
+        }
+
+        .date {
+          width: 5rem;
+        }
+
+        .fl {
+          border-top: none;
+        }
+      }
+    }
+
+    .table-title {
+      display: flex;
+      background-color: #E4E7EB;
+      height: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-title {
+      margin-left: 0.3rem;
+      border-bottom: 1px #CCCCCC solid;
+    }
+
+    li {
+      list-style: none;
+      font-size: 15px;
+      overflow: hidden;
+      white-space: nowrap; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis;text-overflow: ellipsis;
+    }
+
+    .ul{
+      border-bottom: 1px solid #BCC0C8;
+    }
+
+    .fl {
+      float: left;
+      border-right: 0.5px solid #BCC0C8;
+    }
+
+    .fl:last-child {
+      border-right: none;
+    }
+
+
+    .patient-table {
+      display: flex;
+      width: 110.2%;
+
+      li {
+        padding: 0;
+        height: 1.5rem;
+      }
+    }
+
+    .table {
+      margin-top: 1rem;
+      display: inline-block;
+      border: 1px solid #BCC0C8;
+      border-bottom: none;
+      font-family: "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo-Light, sans-serif;
+      color: #4e545f;
+      font-weight: bold;
+      width: 80%;
+    }
+
+    .rg-root {
+      border: 1px solid #BCC0C8;
+      background: #FBFAFA;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      font-size: 14px;
+
+      //.rg-fixed-column-bar{
+      //  background-color: #BCC0C8;
+      //}
+    //  .rg-header:nth-child(4) {
+    //    width: 25px !important;
+    //  }
+    //
+    //  .rg-fixed-body{
+    //    width: 25px !important;
+    //  }
+    //
+    //  div>div>div>div:nth-child(3){
+    //    width: 25px !important;
+    //  }
+    }
+
+    tbody tr {
+      //background-color: red;
+      border: 1px solid #BCC0C8;
+
+      //.rg-data-row {
+      //  border-left : 1px solid #D2D5DA;
+      //}
+    }
+
+    .rg-body {
+      background-color: #FBFAFA;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    width: 768px;
+  }
+
+  .collecting-wrap {
+
+    height: auto;
+    margin: 0 auto;
+
+    .max-wrap {
+      display: block;
+      max-width: 96.5%;
+      margin: 0 auto;
+
+      .title-wrap {
+        align-items: center;
+        margin-top: 1em;
+        padding-bottom: 0.8em;
+        border-bottom: 1px solid #ccc;
+
+        h2 {
+          font-size: 20px;
+          margin-left: 0.5em;
+
+          span {
+            font-size: 16px;
+            color: $Blue;
+            margin-left: 0.5em;
+          }
+        }
+      }
+
+      .content-title {
+        display: flex;
+        padding: 0.5rem;
+
+        h3 {
+          padding-top: 2px;
+          margin-left: 0.5rem;
+        }
+      }
+
+      .main-content {
+        display: block;
+      }
+
+      .left-content {
+        width: 58%;
+      }
+
+      .input-patientNumber {
+        display: flex;
+        width: 100%;
+        height: 30%;
+
+        .input-form {
+          margin: 1rem;
+
+          .patientNo-input {
+            width: 10rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .visit-table {
+      width: 100%;
+    }
+  }
+}

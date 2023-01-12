@@ -1,0 +1,255 @@
+$Blue: #3C9DF6;
+
+@mixin SUB_TITLE_TEXT {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div .css-jcn4dz-MuiBadge-badge{
+  background-color: $Blue;
+}
+
+div .unregistered{
+  border: 1px solid #c6c9cc;;
+  background: #f0f0f0;
+  font-weight: bold;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background: #C9D6DF;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  .max-size-wrap {
+    width: 100%;
+    max-width: 96.5%;
+    margin: 0 auto;
+
+    .content-wrap{
+      width: 100%;
+      display: flex;
+      height: 800px;
+      .left-content-wrap{
+        min-width: 800px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        padding: 0px;
+      }
+      .right-content-wrap{
+        min-width: 800px;
+      }
+    }
+
+    .title-wrap {
+      display: flex;
+      align-items: center;
+      margin: 10px 0px 20px 0px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+
+      h2 {
+        font-size: 20px;
+        margin-left: 0.5em;
+
+        span {
+          font-size: 16px;
+          color: $Blue;
+          margin-left: 0.5em;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
+
+.content {
+  border: 1px solid #b9b9b9;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin: 0px;
+  box-shadow: 0px 1.5px 2px rgb(0 0 0 /25%);
+  height: 100%;
+
+  p {
+    @include SUB_TITLE_TEXT();
+    margin-left: 5px;
+  }
+
+  .left_con_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    height: 5%;
+    margin: 10px 0;
+
+    .left-con {
+      display: flex;
+    }
+
+    .right-con {
+      margin-right: 10px;
+    }
+  }
+
+  .search_title {
+    display: flex;
+    input {
+      margin: 0px 5px;
+      width: 33%;
+      height: 27px;
+      font-size: 13px;
+      border-radius: 5px;
+      border: 1px solid #c6c9cc;
+      padding-left: 5px;
+    }
+  }
+
+  .right_con_title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    height: 5%;
+    margin: 10px 0;
+
+    .title_barcode {
+      padding-top: 5px;
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .default_position{
+    display: flex;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table_height{
+    height: 650px;
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      margin: 20px 0px;
+      padding: 0px 15px;
+    }
+
+    th {
+      border: 1px solid #c6c9cc;
+      padding : 6px 15px;
+      background: #f0f0f0;
+    }
+    .changeColor{
+      &:hover{
+        background: #f0f0f0;
+        cursor:pointer;
+      }
+    }
+
+    .test {
+      &:active{
+        background: #c4c4c4;
+      }
+    }
+
+    td {
+      border: 1px solid #c6c9cc;
+      padding : 6px 15px;
+    }
+  }
+
+  .table_scroll {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    transition: all 800ms ease-in;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+}
+
+
+.conclusion_item {
+  .first {
+    width: 15%;
+  }
+  .second{
+    width: 25%;
+  }
+  .third{
+    widht:45%;
+  }
+  textarea {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    background: #f0f0f0;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  input {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+
+  .item_btn {
+    border: 1px solid $Blue;
+    background: #fff;
+    color: $Blue;
+    font-weight: bold;
+    padding: 5px 13px 5px 13px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    width: 35%;
+
+    &:hover {
+      background: $Blue;
+      color: #fff;
+      transition: 0.5s;
+      font-weight: bold;
+    }
+
+    &:disabled {
+      border: none;
+      cursor: default;
+      opacity: 0.5;
+      background: lightgray;
+      color: #fff;
+    }
+  }
+}
